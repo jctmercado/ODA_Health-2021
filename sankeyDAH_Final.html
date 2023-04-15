@@ -1,0 +1,4915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sankey Diagram of External Assistance in Health</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.2/echarts.min.js"
+      integrity="sha512-VdqgeoWrVJcsDXFlQEKqE5MyhaIgB9yXUVaiUa8DR2J4Lr1uWcFm+ZH/YnzV5WqgKf4GPyHQ64vVLgzqGIchyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="main" style="width: 600px; height: 1500px"></div>
+    <script>
+      var myChart = echarts.init(document.getElementById("main"));
+      var option;
+
+      myChart.hideLoading();
+      option = {
+        tooltip: {
+          trigger: "item",
+          triggerOn: "mousemove",
+        },
+        series: {
+          type: "sankey",
+          layout: "none",
+          emphasis: {
+            focus: "adjacency",
+          },
+          labelLayout: {
+            hideOverlap: true,
+          },
+          lineStyle: {
+            color: "gradient",
+            curveness: 0.5,
+          },
+          layoutIterations: 0,
+          data: [
+            {
+              name: "India",
+            },
+            {
+              name: "Pakistan",
+            },
+            {
+              name: "Indonesia",
+            },
+            {
+              name: "Bangladesh",
+            },
+            {
+              name: "Philippines",
+            },
+            {
+              name: "Myanmar",
+            },
+            {
+              name: "Afghanistan",
+            },
+            {
+              name: "Cambodia",
+            },
+            {
+              name: "Papua New Guinea",
+            },
+            {
+              name: "Nepal",
+            },
+            {
+              name: "China",
+            },
+            {
+              name: "Vietnam",
+            },
+            {
+              name: "Sri Lanka",
+            },
+            {
+              name: "Mongolia",
+            },
+            {
+              name: "Laos",
+            },
+            {
+              name: "Thailand",
+            },
+            {
+              name: "Timor-Leste",
+            },
+            {
+              name: "Solomon Islands",
+            },
+            {
+              name: "Maldives",
+            },
+            {
+              name: "Fiji",
+            },
+            {
+              name: "Vanuatu",
+            },
+            {
+              name: "Samoa",
+            },
+            {
+              name: "Malaysia",
+            },
+            {
+              name: "Tonga",
+            },
+            {
+              name: "Kiribati",
+            },
+            {
+              name: "North Korea",
+            },
+            {
+              name: "Bhutan",
+            },
+            {
+              name: "Federated States of Micronesia",
+            },
+            {
+              name: "Marshall Islands",
+            },
+            {
+              name: "Wallis and Futuna Islands",
+            },
+            {
+              name: "Tuvalu",
+            },
+            {
+              name: "Niue",
+            },
+            {
+              name: "Tokelau",
+            },
+            {
+              name: "Cook Islands",
+            },
+            {
+              name: "Japan",
+            },
+            {
+              name: "United_States",
+            },
+            {
+              name: "United_Kingdom",
+            },
+            {
+              name: "Germany",
+            },
+            {
+              name: "Australia",
+            },
+            {
+              name: "Korea",
+            },
+            {
+              name: "Canada",
+            },
+            {
+              name: "France",
+            },
+            {
+              name: "Italy",
+            },
+            {
+              name: "Sweden",
+            },
+            {
+              name: "Norway",
+            },
+            {
+              name: "New_Zealand",
+            },
+            {
+              name: "Switzerland",
+            },
+            {
+              name: "Netherlands",
+            },
+            {
+              name: "Luxembourg",
+            },
+            {
+              name: "China Government",
+            },
+            {
+              name: "Spain",
+            },
+            {
+              name: "Belgium",
+            },
+            {
+              name: "Austria",
+            },
+            {
+              name: "Denmark",
+            },
+            {
+              name: "Ireland",
+            },
+            {
+              name: "Finland",
+            },
+            {
+              name: "Portugal",
+            },
+            {
+              name: "Greece",
+            },
+            {
+              name: "Bilateral- Other Countries",
+            },
+            {
+              name: "Debt Instrument",
+            },
+            {
+              name: "Private Sector",
+            },
+            {
+              name: "Unspecified",
+            },
+            {
+              name: "Other Countries",
+            },
+            {
+              name: "AsDB",
+            },
+            {
+              name: "WB_IBRD",
+            },
+            {
+              name: "GFATM",
+            },
+            {
+              name: "GAVI",
+            },
+            {
+              name: "INTLNGO",
+            },
+            {
+              name: "US Foundations",
+            },
+            {
+              name: "WHO",
+            },
+            {
+              name: "UNICEF",
+            },
+            {
+              name: "WB_IDA",
+            },
+            {
+              name: "NGO",
+            },
+            {
+              name: "EC",
+            },
+            {
+              name: "UNFPA",
+            },
+            {
+              name: "UNAIDS",
+            },
+          ],
+          links: [
+            {
+              source: "United_States",
+              target: "Afghanistan",
+              value: 58423,
+            },
+            {
+              source: "Japan",
+              target: "Afghanistan",
+              value: 19396,
+            },
+            {
+              source: "Canada",
+              target: "Afghanistan",
+              value: 15187,
+            },
+            {
+              source: "Germany",
+              target: "Afghanistan",
+              value: 12210,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Afghanistan",
+              value: 6086,
+            },
+            {
+              source: "Australia",
+              target: "Afghanistan",
+              value: 5043,
+            },
+            {
+              source: "Sweden",
+              target: "Afghanistan",
+              value: 4943,
+            },
+            {
+              source: "Finland",
+              target: "Afghanistan",
+              value: 2833,
+            },
+            {
+              source: "France",
+              target: "Afghanistan",
+              value: 2711,
+            },
+            {
+              source: "Austria",
+              target: "Afghanistan",
+              value: 2464,
+            },
+            {
+              source: "Korea",
+              target: "Afghanistan",
+              value: 2392,
+            },
+            {
+              source: "Italy",
+              target: "Afghanistan",
+              value: 2283,
+            },
+            {
+              source: "Luxembourg",
+              target: "Afghanistan",
+              value: 1685,
+            },
+            {
+              source: "Norway",
+              target: "Afghanistan",
+              value: 1394,
+            },
+            {
+              source: "United_States",
+              target: "Afghanistan",
+              value: 802,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Afghanistan",
+              value: 801,
+            },
+            {
+              source: "Switzerland",
+              target: "Afghanistan",
+              value: 379,
+            },
+            {
+              source: "Denmark",
+              target: "Afghanistan",
+              value: 141,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Afghanistan",
+              value: 104,
+            },
+            {
+              source: "Korea",
+              target: "Bangladesh",
+              value: 113554,
+            },
+            {
+              source: "Japan",
+              target: "Bangladesh",
+              value: 107958,
+            },
+            {
+              source: "United_States",
+              target: "Bangladesh",
+              value: 46081,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Bangladesh",
+              value: 15580,
+            },
+            {
+              source: "Australia",
+              target: "Bangladesh",
+              value: 11159,
+            },
+            {
+              source: "Canada",
+              target: "Bangladesh",
+              value: 9351,
+            },
+            {
+              source: "Sweden",
+              target: "Bangladesh",
+              value: 7385,
+            },
+            {
+              source: "Switzerland",
+              target: "Bangladesh",
+              value: 1912,
+            },
+            {
+              source: "Germany",
+              target: "Bangladesh",
+              value: 1675,
+            },
+            {
+              source: "France",
+              target: "Bangladesh",
+              value: 1187,
+            },
+            {
+              source: "Netherlands",
+              target: "Bangladesh",
+              value: 803,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Bangladesh",
+              value: 265,
+            },
+            {
+              source: "Denmark",
+              target: "Bangladesh",
+              value: 177,
+            },
+            {
+              source: "Austria",
+              target: "Bangladesh",
+              value: 117,
+            },
+            {
+              source: "Norway",
+              target: "Bangladesh",
+              value: 111,
+            },
+            {
+              source: "Italy",
+              target: "Bangladesh",
+              value: 71,
+            },
+            {
+              source: "Japan",
+              target: "Bhutan",
+              value: 8111,
+            },
+            {
+              source: "Canada",
+              target: "Bhutan",
+              value: 1225,
+            },
+            {
+              source: "Austria",
+              target: "Bhutan",
+              value: 641,
+            },
+            {
+              source: "Korea",
+              target: "Bhutan",
+              value: 424,
+            },
+            {
+              source: "United_States",
+              target: "Bhutan",
+              value: 264,
+            },
+            {
+              source: "Switzerland",
+              target: "Bhutan",
+              value: 226,
+            },
+            {
+              source: "Australia",
+              target: "Bhutan",
+              value: 175,
+            },
+            {
+              source: "Germany",
+              target: "Bhutan",
+              value: 98,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Bhutan",
+              value: 23,
+            },
+            {
+              source: "Italy",
+              target: "Bhutan",
+              value: 4,
+            },
+            {
+              source: "Japan",
+              target: "Cambodia",
+              value: 112758,
+            },
+            {
+              source: "Korea",
+              target: "Cambodia",
+              value: 61977,
+            },
+            {
+              source: "United_States",
+              target: "Cambodia",
+              value: 16335,
+            },
+            {
+              source: "Germany",
+              target: "Cambodia",
+              value: 4574,
+            },
+            {
+              source: "France",
+              target: "Cambodia",
+              value: 2459,
+            },
+            {
+              source: "Canada",
+              target: "Cambodia",
+              value: 1922,
+            },
+            {
+              source: "Belgium",
+              target: "Cambodia",
+              value: 1415,
+            },
+            {
+              source: "Australia",
+              target: "Cambodia",
+              value: 1126,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Cambodia",
+              value: 918,
+            },
+            {
+              source: "Switzerland",
+              target: "Cambodia",
+              value: 651,
+            },
+            {
+              source: "Ireland",
+              target: "Cambodia",
+              value: 404,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Cambodia",
+              value: 371,
+            },
+            {
+              source: "Sweden",
+              target: "Cambodia",
+              value: 175,
+            },
+            {
+              source: "Denmark",
+              target: "Cambodia",
+              value: 168,
+            },
+            {
+              source: "Italy",
+              target: "Cambodia",
+              value: 23,
+            },
+            {
+              source: "Norway",
+              target: "Cambodia",
+              value: 9,
+            },
+            {
+              source: "New_Zealand",
+              target: "Cambodia",
+              value: 9,
+            },
+            {
+              source: "Germany",
+              target: "China",
+              value: 70833,
+            },
+            {
+              source: "Canada",
+              target: "China",
+              value: 1803,
+            },
+            {
+              source: "United_Kingdom",
+              target: "China",
+              value: 1660,
+            },
+            {
+              source: "United_States",
+              target: "China",
+              value: 1640,
+            },
+            {
+              source: "Korea",
+              target: "China",
+              value: 1583,
+            },
+            {
+              source: "Switzerland",
+              target: "China",
+              value: 1230,
+            },
+            {
+              source: "France",
+              target: "China",
+              value: 1133,
+            },
+            {
+              source: "Denmark",
+              target: "China",
+              value: 551,
+            },
+            {
+              source: "Japan",
+              target: "China",
+              value: 268,
+            },
+            {
+              source: "Australia",
+              target: "China",
+              value: 247,
+            },
+            {
+              source: "Finland",
+              target: "China",
+              value: 144,
+            },
+            {
+              source: "Italy",
+              target: "China",
+              value: 143,
+            },
+            {
+              source: "Norway",
+              target: "China",
+              value: 14,
+            },
+            {
+              source: "Ireland",
+              target: "China",
+              value: 6,
+            },
+            {
+              source: "France",
+              target: "Cook Islands",
+              value: 2388,
+            },
+            {
+              source: "Australia",
+              target: "Cook Islands",
+              value: 1628,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Cook Islands",
+              value: 20,
+            },
+            {
+              source: "New_Zealand",
+              target: "Cook Islands",
+              value: 20,
+            },
+            {
+              source: "Canada",
+              target: "Cook Islands",
+              value: 16,
+            },
+            {
+              source: "Japan",
+              target: "Cook Islands",
+              value: 15,
+            },
+            {
+              source: "United_States",
+              target: "Cook Islands",
+              value: 3,
+            },
+            {
+              source: "Japan",
+              target: "Federated States of Micronesia",
+              value: 8034,
+            },
+            {
+              source: "France",
+              target: "Federated States of Micronesia",
+              value: 2714,
+            },
+            {
+              source: "Australia",
+              target: "Federated States of Micronesia",
+              value: 1652,
+            },
+            {
+              source: "United_States",
+              target: "Federated States of Micronesia",
+              value: 1606,
+            },
+            {
+              source: "New_Zealand",
+              target: "Federated States of Micronesia",
+              value: 136,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Federated States of Micronesia",
+              value: 116,
+            },
+            {
+              source: "Canada",
+              target: "Federated States of Micronesia",
+              value: 30,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Federated States of Micronesia",
+              value: 19,
+            },
+            {
+              source: "Japan",
+              target: "Fiji",
+              value: 10751,
+            },
+            {
+              source: "Australia",
+              target: "Fiji",
+              value: 10096,
+            },
+            {
+              source: "Korea",
+              target: "Fiji",
+              value: 2940,
+            },
+            {
+              source: "France",
+              target: "Fiji",
+              value: 2580,
+            },
+            {
+              source: "New_Zealand",
+              target: "Fiji",
+              value: 2087,
+            },
+            {
+              source: "United_States",
+              target: "Fiji",
+              value: 677,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Fiji",
+              value: 366,
+            },
+            {
+              source: "Canada",
+              target: "Fiji",
+              value: 308,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Fiji",
+              value: 109,
+            },
+            {
+              source: "Japan",
+              target: "India",
+              value: 384457,
+            },
+            {
+              source: "Germany",
+              target: "India",
+              value: 87121,
+            },
+            {
+              source: "United_States",
+              target: "India",
+              value: 54523,
+            },
+            {
+              source: "United_Kingdom",
+              target: "India",
+              value: 13616,
+            },
+            {
+              source: "Canada",
+              target: "India",
+              value: 3286,
+            },
+            {
+              source: "Italy",
+              target: "India",
+              value: 3195,
+            },
+            {
+              source: "Norway",
+              target: "India",
+              value: 2229,
+            },
+            {
+              source: "Belgium",
+              target: "India",
+              value: 1308,
+            },
+            {
+              source: "Australia",
+              target: "India",
+              value: 582,
+            },
+            {
+              source: "Sweden",
+              target: "India",
+              value: 283,
+            },
+            {
+              source: "Ireland",
+              target: "India",
+              value: 160,
+            },
+            {
+              source: "Korea",
+              target: "India",
+              value: 135,
+            },
+            {
+              source: "Denmark",
+              target: "India",
+              value: 38,
+            },
+            {
+              source: "Spain",
+              target: "India",
+              value: 14,
+            },
+            {
+              source: "France",
+              target: "India",
+              value: 8,
+            },
+            {
+              source: "Switzerland",
+              target: "India",
+              value: 5,
+            },
+            {
+              source: "Japan",
+              target: "Indonesia",
+              value: 211706,
+            },
+            {
+              source: "United_States",
+              target: "Indonesia",
+              value: 28362,
+            },
+            {
+              source: "Germany",
+              target: "Indonesia",
+              value: 7796,
+            },
+            {
+              source: "Australia",
+              target: "Indonesia",
+              value: 7644,
+            },
+            {
+              source: "Korea",
+              target: "Indonesia",
+              value: 6826,
+            },
+            {
+              source: "Austria",
+              target: "Indonesia",
+              value: 3365,
+            },
+            {
+              source: "New_Zealand",
+              target: "Indonesia",
+              value: 2440,
+            },
+            {
+              source: "Canada",
+              target: "Indonesia",
+              value: 2251,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Indonesia",
+              value: 1788,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Indonesia",
+              value: 1481,
+            },
+            {
+              source: "Norway",
+              target: "Indonesia",
+              value: 618,
+            },
+            {
+              source: "Korea",
+              target: "Indonesia",
+              value: 521,
+            },
+            {
+              source: "Sweden",
+              target: "Indonesia",
+              value: 205,
+            },
+            {
+              source: "France",
+              target: "Indonesia",
+              value: 122,
+            },
+            {
+              source: "Italy",
+              target: "Indonesia",
+              value: 92,
+            },
+            {
+              source: "Switzerland",
+              target: "Indonesia",
+              value: 79,
+            },
+            {
+              source: "Ireland",
+              target: "Indonesia",
+              value: 38,
+            },
+            {
+              source: "Japan",
+              target: "Kiribati",
+              value: 10869,
+            },
+            {
+              source: "Australia",
+              target: "Kiribati",
+              value: 3995,
+            },
+            {
+              source: "France",
+              target: "Kiribati",
+              value: 2422,
+            },
+            {
+              source: "New_Zealand",
+              target: "Kiribati",
+              value: 1404,
+            },
+            {
+              source: "Canada",
+              target: "Kiribati",
+              value: 276,
+            },
+            {
+              source: "United_States",
+              target: "Kiribati",
+              value: 236,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Kiribati",
+              value: 116,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Kiribati",
+              value: 97,
+            },
+            {
+              source: "Japan",
+              target: "Laos",
+              value: 37569,
+            },
+            {
+              source: "Korea",
+              target: "Laos",
+              value: 9530,
+            },
+            {
+              source: "Luxembourg",
+              target: "Laos",
+              value: 4931,
+            },
+            {
+              source: "United_States",
+              target: "Laos",
+              value: 2781,
+            },
+            {
+              source: "Australia",
+              target: "Laos",
+              value: 1891,
+            },
+            {
+              source: "Canada",
+              target: "Laos",
+              value: 1398,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Laos",
+              value: 743,
+            },
+            {
+              source: "France",
+              target: "Laos",
+              value: 704,
+            },
+            {
+              source: "Ireland",
+              target: "Laos",
+              value: 413,
+            },
+            {
+              source: "Germany",
+              target: "Laos",
+              value: 71,
+            },
+            {
+              source: "Sweden",
+              target: "Laos",
+              value: 15,
+            },
+            {
+              source: "Switzerland",
+              target: "Laos",
+              value: 12,
+            },
+            {
+              source: "Italy",
+              target: "Laos",
+              value: 12,
+            },
+            {
+              source: "New_Zealand",
+              target: "Laos",
+              value: 9,
+            },
+            {
+              source: "Norway",
+              target: "Laos",
+              value: 3,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Malaysia",
+              value: 2359,
+            },
+            {
+              source: "Canada",
+              target: "Malaysia",
+              value: 1327,
+            },
+            {
+              source: "Japan",
+              target: "Malaysia",
+              value: 1178,
+            },
+            {
+              source: "United_States",
+              target: "Malaysia",
+              value: 775,
+            },
+            {
+              source: "Austria",
+              target: "Malaysia",
+              value: 237,
+            },
+            {
+              source: "Korea",
+              target: "Malaysia",
+              value: 189,
+            },
+            {
+              source: "Germany",
+              target: "Malaysia",
+              value: 133,
+            },
+            {
+              source: "Italy",
+              target: "Malaysia",
+              value: 29,
+            },
+            {
+              source: "France",
+              target: "Malaysia",
+              value: 10,
+            },
+            {
+              source: "Australia",
+              target: "Malaysia",
+              value: 4,
+            },
+            {
+              source: "Spain",
+              target: "Malaysia",
+              value: 3,
+            },
+            {
+              source: "Japan",
+              target: "Maldives",
+              value: 25507,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Maldives",
+              value: 5000,
+            },
+            {
+              source: "Canada",
+              target: "Maldives",
+              value: 1211,
+            },
+            {
+              source: "United_States",
+              target: "Maldives",
+              value: 260,
+            },
+            {
+              source: "Korea",
+              target: "Maldives",
+              value: 209,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Maldives",
+              value: 14,
+            },
+            {
+              source: "Germany",
+              target: "Maldives",
+              value: 10,
+            },
+            {
+              source: "Australia",
+              target: "Maldives",
+              value: 2,
+            },
+            {
+              source: "Italy",
+              target: "Maldives",
+              value: 1,
+            },
+            {
+              source: "Japan",
+              target: "Marshall Islands",
+              value: 6702,
+            },
+            {
+              source: "France",
+              target: "Marshall Islands",
+              value: 2545,
+            },
+            {
+              source: "United_States",
+              target: "Marshall Islands",
+              value: 1757,
+            },
+            {
+              source: "Australia",
+              target: "Marshall Islands",
+              value: 1608,
+            },
+            {
+              source: "New_Zealand",
+              target: "Marshall Islands",
+              value: 61,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Marshall Islands",
+              value: 22,
+            },
+            {
+              source: "Canada",
+              target: "Marshall Islands",
+              value: 14,
+            },
+            {
+              source: "Japan",
+              target: "Mongolia",
+              value: 84299,
+            },
+            {
+              source: "Korea",
+              target: "Mongolia",
+              value: 6277,
+            },
+            {
+              source: "Luxembourg",
+              target: "Mongolia",
+              value: 1625,
+            },
+            {
+              source: "Canada",
+              target: "Mongolia",
+              value: 1283,
+            },
+            {
+              source: "United_States",
+              target: "Mongolia",
+              value: 1003,
+            },
+            {
+              source: "Germany",
+              target: "Mongolia",
+              value: 457,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Mongolia",
+              value: 227,
+            },
+            {
+              source: "Australia",
+              target: "Mongolia",
+              value: 98,
+            },
+            {
+              source: "Switzerland",
+              target: "Mongolia",
+              value: 48,
+            },
+            {
+              source: "Italy",
+              target: "Mongolia",
+              value: 11,
+            },
+            {
+              source: "France",
+              target: "Mongolia",
+              value: 2,
+            },
+            {
+              source: "Norway",
+              target: "Mongolia",
+              value: 2,
+            },
+            {
+              source: "Japan",
+              target: "Myanmar",
+              value: 59354,
+            },
+            {
+              source: "United_States",
+              target: "Myanmar",
+              value: 37988,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Myanmar",
+              value: 20777,
+            },
+            {
+              source: "Sweden",
+              target: "Myanmar",
+              value: 18830,
+            },
+            {
+              source: "Germany",
+              target: "Myanmar",
+              value: 4799,
+            },
+            {
+              source: "Switzerland",
+              target: "Myanmar",
+              value: 4788,
+            },
+            {
+              source: "Korea",
+              target: "Myanmar",
+              value: 3808,
+            },
+            {
+              source: "Australia",
+              target: "Myanmar",
+              value: 3292,
+            },
+            {
+              source: "Canada",
+              target: "Myanmar",
+              value: 1976,
+            },
+            {
+              source: "Japan",
+              target: "Myanmar",
+              value: 1897,
+            },
+            {
+              source: "New_Zealand",
+              target: "Myanmar",
+              value: 1152,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Myanmar",
+              value: 1081,
+            },
+            {
+              source: "Norway",
+              target: "Myanmar",
+              value: 921,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Myanmar",
+              value: 863,
+            },
+            {
+              source: "France",
+              target: "Myanmar",
+              value: 450,
+            },
+            {
+              source: "Italy",
+              target: "Myanmar",
+              value: 314,
+            },
+            {
+              source: "Australia",
+              target: "Myanmar",
+              value: 298,
+            },
+            {
+              source: "Ireland",
+              target: "Myanmar",
+              value: 179,
+            },
+            {
+              source: "Netherlands",
+              target: "Myanmar",
+              value: 5,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Nepal",
+              value: 27636,
+            },
+            {
+              source: "Germany",
+              target: "Nepal",
+              value: 19320,
+            },
+            {
+              source: "United_States",
+              target: "Nepal",
+              value: 17679,
+            },
+            {
+              source: "Japan",
+              target: "Nepal",
+              value: 4403,
+            },
+            {
+              source: "Norway",
+              target: "Nepal",
+              value: 1721,
+            },
+            {
+              source: "Canada",
+              target: "Nepal",
+              value: 1610,
+            },
+            {
+              source: "Korea",
+              target: "Nepal",
+              value: 1490,
+            },
+            {
+              source: "Switzerland",
+              target: "Nepal",
+              value: 1122,
+            },
+            {
+              source: "Australia",
+              target: "Nepal",
+              value: 122,
+            },
+            {
+              source: "Denmark",
+              target: "Nepal",
+              value: 84,
+            },
+            {
+              source: "Sweden",
+              target: "Nepal",
+              value: 45,
+            },
+            {
+              source: "Finland",
+              target: "Nepal",
+              value: 41,
+            },
+            {
+              source: "Italy",
+              target: "Nepal",
+              value: 41,
+            },
+            {
+              source: "Ireland",
+              target: "Nepal",
+              value: 7,
+            },
+            {
+              source: "France",
+              target: "Niue",
+              value: 2379,
+            },
+            {
+              source: "Australia",
+              target: "Niue",
+              value: 1805,
+            },
+            {
+              source: "New_Zealand",
+              target: "Niue",
+              value: 1462,
+            },
+            {
+              source: "Japan",
+              target: "Niue",
+              value: 7,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Niue",
+              value: 5,
+            },
+            {
+              source: "Canada",
+              target: "Niue",
+              value: 3,
+            },
+            {
+              source: "United_States",
+              target: "Niue",
+              value: 1,
+            },
+            {
+              source: "Switzerland",
+              target: "North Korea",
+              value: 1667,
+            },
+            {
+              source: "Canada",
+              target: "North Korea",
+              value: 1194,
+            },
+            {
+              source: "Germany",
+              target: "North Korea",
+              value: 521,
+            },
+            {
+              source: "United_States",
+              target: "North Korea",
+              value: 292,
+            },
+            {
+              source: "Switzerland",
+              target: "North Korea",
+              value: 152,
+            },
+            {
+              source: "United_Kingdom",
+              target: "North Korea",
+              value: 135,
+            },
+            {
+              source: "Canada",
+              target: "North Korea",
+              value: 104,
+            },
+            {
+              source: "United_Kingdom",
+              target: "North Korea",
+              value: 104,
+            },
+            {
+              source: "Australia",
+              target: "North Korea",
+              value: 8,
+            },
+            {
+              source: "Germany",
+              target: "North Korea",
+              value: 7,
+            },
+            {
+              source: "France",
+              target: "North Korea",
+              value: 5,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Pakistan",
+              value: 44620,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Pakistan",
+              value: 20871,
+            },
+            {
+              source: "Japan",
+              target: "Pakistan",
+              value: 17340,
+            },
+            {
+              source: "Germany",
+              target: "Pakistan",
+              value: 16990,
+            },
+            {
+              source: "United_States",
+              target: "Pakistan",
+              value: 6686,
+            },
+            {
+              source: "Korea",
+              target: "Pakistan",
+              value: 3289,
+            },
+            {
+              source: "Canada",
+              target: "Pakistan",
+              value: 2669,
+            },
+            {
+              source: "Sweden",
+              target: "Pakistan",
+              value: 1275,
+            },
+            {
+              source: "Japan",
+              target: "Pakistan",
+              value: 437,
+            },
+            {
+              source: "Australia",
+              target: "Pakistan",
+              value: 316,
+            },
+            {
+              source: "Korea",
+              target: "Pakistan",
+              value: 312,
+            },
+            {
+              source: "Norway",
+              target: "Pakistan",
+              value: 100,
+            },
+            {
+              source: "Italy",
+              target: "Pakistan",
+              value: 96,
+            },
+            {
+              source: "Denmark",
+              target: "Pakistan",
+              value: 48,
+            },
+            {
+              source: "Australia",
+              target: "Papua New Guinea",
+              value: 105235,
+            },
+            {
+              source: "Japan",
+              target: "Papua New Guinea",
+              value: 19112,
+            },
+            {
+              source: "United_States",
+              target: "Papua New Guinea",
+              value: 4193,
+            },
+            {
+              source: "France",
+              target: "Papua New Guinea",
+              value: 3079,
+            },
+            {
+              source: "New_Zealand",
+              target: "Papua New Guinea",
+              value: 1983,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Papua New Guinea",
+              value: 1652,
+            },
+            {
+              source: "Canada",
+              target: "Papua New Guinea",
+              value: 569,
+            },
+            {
+              source: "Korea",
+              target: "Papua New Guinea",
+              value: 312,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Papua New Guinea",
+              value: 116,
+            },
+            {
+              source: "Japan",
+              target: "Philippines",
+              value: 166878,
+            },
+            {
+              source: "Korea",
+              target: "Philippines",
+              value: 106532,
+            },
+            {
+              source: "United_States",
+              target: "Philippines",
+              value: 21588,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Philippines",
+              value: 3193,
+            },
+            {
+              source: "Canada",
+              target: "Philippines",
+              value: 2681,
+            },
+            {
+              source: "New_Zealand",
+              target: "Philippines",
+              value: 1712,
+            },
+            {
+              source: "Sweden",
+              target: "Philippines",
+              value: 928,
+            },
+            {
+              source: "Germany",
+              target: "Philippines",
+              value: 912,
+            },
+            {
+              source: "Spain",
+              target: "Philippines",
+              value: 605,
+            },
+            {
+              source: "France",
+              target: "Philippines",
+              value: 310,
+            },
+            {
+              source: "Australia",
+              target: "Philippines",
+              value: 163,
+            },
+            {
+              source: "Italy",
+              target: "Philippines",
+              value: 144,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Philippines",
+              value: 135,
+            },
+            {
+              source: "Norway",
+              target: "Philippines",
+              value: 58,
+            },
+            {
+              source: "Switzerland",
+              target: "Philippines",
+              value: 20,
+            },
+            {
+              source: "Australia",
+              target: "Samoa",
+              value: 10398,
+            },
+            {
+              source: "Japan",
+              target: "Samoa",
+              value: 3736,
+            },
+            {
+              source: "New_Zealand",
+              target: "Samoa",
+              value: 2846,
+            },
+            {
+              source: "France",
+              target: "Samoa",
+              value: 2417,
+            },
+            {
+              source: "Canada",
+              target: "Samoa",
+              value: 301,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Samoa",
+              value: 166,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Samoa",
+              value: 116,
+            },
+            {
+              source: "Korea",
+              target: "Samoa",
+              value: 43,
+            },
+            {
+              source: "United_States",
+              target: "Samoa",
+              value: 8,
+            },
+            {
+              source: "Australia",
+              target: "Solomon Islands",
+              value: 38885,
+            },
+            {
+              source: "Japan",
+              target: "Solomon Islands",
+              value: 6274,
+            },
+            {
+              source: "France",
+              target: "Solomon Islands",
+              value: 2494,
+            },
+            {
+              source: "New_Zealand",
+              target: "Solomon Islands",
+              value: 338,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Solomon Islands",
+              value: 262,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Solomon Islands",
+              value: 116,
+            },
+            {
+              source: "Canada",
+              target: "Solomon Islands",
+              value: 112,
+            },
+            {
+              source: "Sweden",
+              target: "Solomon Islands",
+              value: 49,
+            },
+            {
+              source: "United_States",
+              target: "Solomon Islands",
+              value: 23,
+            },
+            {
+              source: "Korea",
+              target: "Solomon Islands",
+              value: 16,
+            },
+            {
+              source: "Japan",
+              target: "Sri Lanka",
+              value: 18302,
+            },
+            {
+              source: "Germany",
+              target: "Sri Lanka",
+              value: 4566,
+            },
+            {
+              source: "Korea",
+              target: "Sri Lanka",
+              value: 1673,
+            },
+            {
+              source: "Canada",
+              target: "Sri Lanka",
+              value: 1496,
+            },
+            {
+              source: "France",
+              target: "Sri Lanka",
+              value: 1107,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Sri Lanka",
+              value: 611,
+            },
+            {
+              source: "Australia",
+              target: "Sri Lanka",
+              value: 408,
+            },
+            {
+              source: "United_States",
+              target: "Sri Lanka",
+              value: 341,
+            },
+            {
+              source: "Finland",
+              target: "Sri Lanka",
+              value: 323,
+            },
+            {
+              source: "Sweden",
+              target: "Sri Lanka",
+              value: 252,
+            },
+            {
+              source: "Switzerland",
+              target: "Sri Lanka",
+              value: 212,
+            },
+            {
+              source: "Australia",
+              target: "Sri Lanka",
+              value: 90,
+            },
+            {
+              source: "Italy",
+              target: "Sri Lanka",
+              value: 22,
+            },
+            {
+              source: "Norway",
+              target: "Sri Lanka",
+              value: 13,
+            },
+            {
+              source: "United_States",
+              target: "Thailand",
+              value: 7559,
+            },
+            {
+              source: "Japan",
+              target: "Thailand",
+              value: 5000,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Thailand",
+              value: 3947,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Thailand",
+              value: 2571,
+            },
+            {
+              source: "Canada",
+              target: "Thailand",
+              value: 1519,
+            },
+            {
+              source: "France",
+              target: "Thailand",
+              value: 1488,
+            },
+            {
+              source: "Australia",
+              target: "Thailand",
+              value: 400,
+            },
+            {
+              source: "Germany",
+              target: "Thailand",
+              value: 53,
+            },
+            {
+              source: "Ireland",
+              target: "Thailand",
+              value: 29,
+            },
+            {
+              source: "Sweden",
+              target: "Thailand",
+              value: 28,
+            },
+            {
+              source: "Korea",
+              target: "Thailand",
+              value: 24,
+            },
+            {
+              source: "Italy",
+              target: "Thailand",
+              value: 12,
+            },
+            {
+              source: "Norway",
+              target: "Thailand",
+              value: 4,
+            },
+            {
+              source: "Switzerland",
+              target: "Thailand",
+              value: 3,
+            },
+            {
+              source: "Australia",
+              target: "Timor-Leste",
+              value: 21954,
+            },
+            {
+              source: "Japan",
+              target: "Timor-Leste",
+              value: 10381,
+            },
+            {
+              source: "Canada",
+              target: "Timor-Leste",
+              value: 1265,
+            },
+            {
+              source: "Korea",
+              target: "Timor-Leste",
+              value: 1251,
+            },
+            {
+              source: "United_States",
+              target: "Timor-Leste",
+              value: 541,
+            },
+            {
+              source: "New_Zealand",
+              target: "Timor-Leste",
+              value: 487,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Timor-Leste",
+              value: 162,
+            },
+            {
+              source: "Germany",
+              target: "Timor-Leste",
+              value: 22,
+            },
+            {
+              source: "France",
+              target: "Timor-Leste",
+              value: 6,
+            },
+            {
+              source: "Switzerland",
+              target: "Timor-Leste",
+              value: 5,
+            },
+            {
+              source: "Portugal",
+              target: "Timor-Leste",
+              value: 4,
+            },
+            {
+              source: "Italy",
+              target: "Timor-Leste",
+              value: 1,
+            },
+            {
+              source: "Norway",
+              target: "Timor-Leste",
+              value: 1,
+            },
+            {
+              source: "France",
+              target: "Tokelau",
+              value: 2375,
+            },
+            {
+              source: "Australia",
+              target: "Tokelau",
+              value: 1797,
+            },
+            {
+              source: "New_Zealand",
+              target: "Tokelau",
+              value: 1231,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Tokelau",
+              value: 8,
+            },
+            {
+              source: "Canada",
+              target: "Tokelau",
+              value: 4,
+            },
+            {
+              source: "Japan",
+              target: "Tokelau",
+              value: 1,
+            },
+            {
+              source: "Australia",
+              target: "Tonga",
+              value: 7437,
+            },
+            {
+              source: "Japan",
+              target: "Tonga",
+              value: 3044,
+            },
+            {
+              source: "France",
+              target: "Tonga",
+              value: 2411,
+            },
+            {
+              source: "New_Zealand",
+              target: "Tonga",
+              value: 2282,
+            },
+            {
+              source: "Canada",
+              target: "Tonga",
+              value: 238,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Tonga",
+              value: 116,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Tonga",
+              value: 53,
+            },
+            {
+              source: "United_States",
+              target: "Tonga",
+              value: 7,
+            },
+            {
+              source: "Australia",
+              target: "Tuvalu",
+              value: 2663,
+            },
+            {
+              source: "France",
+              target: "Tuvalu",
+              value: 2382,
+            },
+            {
+              source: "Japan",
+              target: "Tuvalu",
+              value: 1001,
+            },
+            {
+              source: "New_Zealand",
+              target: "Tuvalu",
+              value: 137,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Tuvalu",
+              value: 116,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Tuvalu",
+              value: 8,
+            },
+            {
+              source: "Canada",
+              target: "Tuvalu",
+              value: 4,
+            },
+            {
+              source: "United_States",
+              target: "Tuvalu",
+              value: 1,
+            },
+            {
+              source: "Japan",
+              target: "Vanuatu",
+              value: 9160,
+            },
+            {
+              source: "Australia",
+              target: "Vanuatu",
+              value: 5549,
+            },
+            {
+              source: "France",
+              target: "Vanuatu",
+              value: 2534,
+            },
+            {
+              source: "New_Zealand",
+              target: "Vanuatu",
+              value: 1806,
+            },
+            {
+              source: "United_States",
+              target: "Vanuatu",
+              value: 652,
+            },
+            {
+              source: "Canada",
+              target: "Vanuatu",
+              value: 258,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Vanuatu",
+              value: 151,
+            },
+            {
+              source: "Bilateral- Other Countries",
+              target: "Vanuatu",
+              value: 116,
+            },
+            {
+              source: "Sweden",
+              target: "Vanuatu",
+              value: 49,
+            },
+            {
+              source: "Japan",
+              target: "Vietnam",
+              value: 30507,
+            },
+            {
+              source: "United_States",
+              target: "Vietnam",
+              value: 28424,
+            },
+            {
+              source: "Korea",
+              target: "Vietnam",
+              value: 17297,
+            },
+            {
+              source: "Germany",
+              target: "Vietnam",
+              value: 8586,
+            },
+            {
+              source: "Canada",
+              target: "Vietnam",
+              value: 1924,
+            },
+            {
+              source: "Australia",
+              target: "Vietnam",
+              value: 1598,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Vietnam",
+              value: 1320,
+            },
+            {
+              source: "France",
+              target: "Vietnam",
+              value: 1098,
+            },
+            {
+              source: "Italy",
+              target: "Vietnam",
+              value: 1056,
+            },
+            {
+              source: "Belgium",
+              target: "Vietnam",
+              value: 366,
+            },
+            {
+              source: "Finland",
+              target: "Vietnam",
+              value: 151,
+            },
+            {
+              source: "Switzerland",
+              target: "Vietnam",
+              value: 64,
+            },
+            {
+              source: "Norway",
+              target: "Vietnam",
+              value: 17,
+            },
+            {
+              source: "Sweden",
+              target: "Vietnam",
+              value: 15,
+            },
+            {
+              source: "New_Zealand",
+              target: "Vietnam",
+              value: 9,
+            },
+            {
+              source: "Denmark",
+              target: "Vietnam",
+              value: 6,
+            },
+            {
+              source: "France",
+              target: "Wallis and Futuna Islands",
+              value: 4698,
+            },
+            {
+              source: "Australia",
+              target: "Wallis and Futuna Islands",
+              value: 1667,
+            },
+            {
+              source: "Canada",
+              target: "Wallis and Futuna Islands",
+              value: 1313,
+            },
+            {
+              source: "Japan",
+              target: "Wallis and Futuna Islands",
+              value: 85,
+            },
+            {
+              source: "New_Zealand",
+              target: "Wallis and Futuna Islands",
+              value: 43,
+            },
+            {
+              source: "United_States",
+              target: "Wallis and Futuna Islands",
+              value: 16,
+            },
+            {
+              source: "United_Kingdom",
+              target: "Wallis and Futuna Islands",
+              value: 10,
+            },
+            {
+              source: "Debt Instrument",
+              target: "WB_IBRD",
+              value: 1755694,
+            },
+            {
+              source: "Unspecified",
+              target: "AsDB",
+              value: 1351787,
+            },
+            {
+              source: "United_States",
+              target: "GFATM",
+              value: 363905,
+            },
+            {
+              source: "Private Sector",
+              target: "US Foundations",
+              value: 308589,
+            },
+            {
+              source: "Other Countries",
+              target: "GAVI",
+              value: 187709,
+            },
+            {
+              source: "United_Kingdom",
+              target: "GAVI",
+              value: 161151,
+            },
+            {
+              source: "Japan",
+              target: "AsDB",
+              value: 147378,
+            },
+            {
+              source: "United_States",
+              target: "INTLNGO",
+              value: 136117,
+            },
+            {
+              source: "Other Countries",
+              target: "AsDB",
+              value: 126331,
+            },
+            {
+              source: "United_Kingdom",
+              target: "GFATM",
+              value: 125037,
+            },
+            {
+              source: "Italy",
+              target: "GAVI",
+              value: 122948,
+            },
+            {
+              source: "Germany",
+              target: "GFATM",
+              value: 108512,
+            },
+            {
+              source: "United_States",
+              target: "NGO",
+              value: 90667,
+            },
+            {
+              source: "Japan",
+              target: "GFATM",
+              value: 84129,
+            },
+            {
+              source: "Other Countries",
+              target: "UNICEF",
+              value: 77190,
+            },
+            {
+              source: "Debt Instrument",
+              target: "WB_IDA",
+              value: 76868,
+            },
+            {
+              source: "Private Sector",
+              target: "WHO",
+              value: 73279,
+            },
+            {
+              source: "Private Sector",
+              target: "GAVI",
+              value: 73100,
+            },
+            {
+              source: "Other Countries",
+              target: "NGO",
+              value: 70107,
+            },
+            {
+              source: "Australia",
+              target: "AsDB",
+              value: 61494,
+            },
+            {
+              source: "United_States",
+              target: "GAVI",
+              value: 58397,
+            },
+            {
+              source: "France",
+              target: "GFATM",
+              value: 57541,
+            },
+            {
+              source: "Private Sector",
+              target: "GFATM",
+              value: 54137,
+            },
+            {
+              source: "Canada",
+              target: "INTLNGO",
+              value: 52570,
+            },
+            {
+              source: "Germany",
+              target: "WHO",
+              value: 49308,
+            },
+            {
+              source: "Canada",
+              target: "GAVI",
+              value: 48932,
+            },
+            {
+              source: "United_Kingdom",
+              target: "INTLNGO",
+              value: 45323,
+            },
+            {
+              source: "Norway",
+              target: "GAVI",
+              value: 45130,
+            },
+            {
+              source: "Private Sector",
+              target: "UNICEF",
+              value: 43225,
+            },
+            {
+              source: "Japan",
+              target: "UNICEF",
+              value: 40348,
+            },
+            {
+              source: "United_States",
+              target: "WHO",
+              value: 39418,
+            },
+            {
+              source: "Other Countries",
+              target: "WHO",
+              value: 38976,
+            },
+            {
+              source: "Australia",
+              target: "INTLNGO",
+              value: 35173,
+            },
+            {
+              source: "United_Kingdom",
+              target: "WHO",
+              value: 31892,
+            },
+            {
+              source: "Canada",
+              target: "GFATM",
+              value: 28628,
+            },
+            {
+              source: "Other Countries",
+              target: "EC",
+              value: 28524,
+            },
+            {
+              source: "United_Kingdom",
+              target: "WB_IDA",
+              value: 27659,
+            },
+            {
+              source: "United_States",
+              target: "AsDB",
+              value: 26046,
+            },
+            {
+              source: "Japan",
+              target: "WB_IDA",
+              value: 24750,
+            },
+            {
+              source: "Japan",
+              target: "WHO",
+              value: 23702,
+            },
+            {
+              source: "United_States",
+              target: "UNICEF",
+              value: 23000,
+            },
+            {
+              source: "United_Kingdom",
+              target: "AsDB",
+              value: 22808,
+            },
+            {
+              source: "Germany",
+              target: "WB_IDA",
+              value: 18452,
+            },
+            {
+              source: "United_Kingdom",
+              target: "UNFPA",
+              value: 17961,
+            },
+            {
+              source: "Germany",
+              target: "EC",
+              value: 17136,
+            },
+            {
+              source: "Japan",
+              target: "INTLNGO",
+              value: 16424,
+            },
+            {
+              source: "United_States",
+              target: "WB_IDA",
+              value: 15946,
+            },
+            {
+              source: "Germany",
+              target: "GAVI",
+              value: 15304,
+            },
+            {
+              source: "France",
+              target: "GAVI",
+              value: 14222,
+            },
+            {
+              source: "Canada",
+              target: "AsDB",
+              value: 14005,
+            },
+            {
+              source: "China Government",
+              target: "AsDB",
+              value: 13738,
+            },
+            {
+              source: "France",
+              target: "EC",
+              value: 13611,
+            },
+            {
+              source: "France",
+              target: "INTLNGO",
+              value: 13539,
+            },
+            {
+              source: "Switzerland",
+              target: "INTLNGO",
+              value: 13439,
+            },
+            {
+              source: "Other Countries",
+              target: "UNFPA",
+              value: 12558,
+            },
+            {
+              source: "Korea",
+              target: "AsDB",
+              value: 12162,
+            },
+            {
+              source: "Australia",
+              target: "WHO",
+              value: 12127,
+            },
+            {
+              source: "Germany",
+              target: "AsDB",
+              value: 11891,
+            },
+            {
+              source: "Japan",
+              target: "GAVI",
+              value: 11880,
+            },
+            {
+              source: "Other Countries",
+              target: "GFATM",
+              value: 11521,
+            },
+            {
+              source: "Netherlands",
+              target: "GFATM",
+              value: 11233,
+            },
+            {
+              source: "Germany",
+              target: "INTLNGO",
+              value: 11101,
+            },
+            {
+              source: "Italy",
+              target: "GFATM",
+              value: 10986,
+            },
+            {
+              source: "Australia",
+              target: "UNFPA",
+              value: 9823,
+            },
+            {
+              source: "Sweden",
+              target: "GFATM",
+              value: 9616,
+            },
+            {
+              source: "Italy",
+              target: "EC",
+              value: 9600,
+            },
+            {
+              source: "United_Kingdom",
+              target: "EC",
+              value: 9286,
+            },
+            {
+              source: "Private Sector",
+              target: "NGO",
+              value: 9073,
+            },
+            {
+              source: "Netherlands",
+              target: "GAVI",
+              value: 8629,
+            },
+            {
+              source: "Sweden",
+              target: "GAVI",
+              value: 8469,
+            },
+            {
+              source: "Australia",
+              target: "UNICEF",
+              value: 8430,
+            },
+            {
+              source: "Australia",
+              target: "GAVI",
+              value: 8274,
+            },
+            {
+              source: "Korea",
+              target: "INTLNGO",
+              value: 7980,
+            },
+            {
+              source: "France",
+              target: "AsDB",
+              value: 7820,
+            },
+            {
+              source: "France",
+              target: "WB_IDA",
+              value: 7257,
+            },
+            {
+              source: "Norway",
+              target: "GFATM",
+              value: 6934,
+            },
+            {
+              source: "New_Zealand",
+              target: "WHO",
+              value: 6807,
+            },
+            {
+              source: "Italy",
+              target: "AsDB",
+              value: 6651,
+            },
+            {
+              source: "Private Sector",
+              target: "WB_IBRD",
+              value: 6592,
+            },
+            {
+              source: "Spain",
+              target: "EC",
+              value: 6494,
+            },
+            {
+              source: "New_Zealand",
+              target: "UNICEF",
+              value: 6200,
+            },
+            {
+              source: "Sweden",
+              target: "UNICEF",
+              value: 5896,
+            },
+            {
+              source: "Korea",
+              target: "WHO",
+              value: 5491,
+            },
+            {
+              source: "Sweden",
+              target: "UNFPA",
+              value: 5384,
+            },
+            {
+              source: "New_Zealand",
+              target: "INTLNGO",
+              value: 5275,
+            },
+            {
+              source: "Canada",
+              target: "WB_IDA",
+              value: 4808,
+            },
+            {
+              source: "Netherlands",
+              target: "WB_IDA",
+              value: 4486,
+            },
+            {
+              source: "Germany",
+              target: "UNICEF",
+              value: 4340,
+            },
+            {
+              source: "France",
+              target: "WHO",
+              value: 4258,
+            },
+            {
+              source: "Sweden",
+              target: "WB_IDA",
+              value: 4218,
+            },
+            {
+              source: "United_Kingdom",
+              target: "UNICEF",
+              value: 4204,
+            },
+            {
+              source: "Italy",
+              target: "WB_IDA",
+              value: 4203,
+            },
+            {
+              source: "Korea",
+              target: "GAVI",
+              value: 4004,
+            },
+            {
+              source: "Norway",
+              target: "INTLNGO",
+              value: 3915,
+            },
+            {
+              source: "Canada",
+              target: "UNFPA",
+              value: 3851,
+            },
+            {
+              source: "Switzerland",
+              target: "AsDB",
+              value: 3844,
+            },
+            {
+              source: "Norway",
+              target: "AsDB",
+              value: 3640,
+            },
+            {
+              source: "Switzerland",
+              target: "GFATM",
+              value: 3525,
+            },
+            {
+              source: "Spain",
+              target: "WB_IDA",
+              value: 3435,
+            },
+            {
+              source: "Sweden",
+              target: "AsDB",
+              value: 3306,
+            },
+            {
+              source: "Belgium",
+              target: "GFATM",
+              value: 3241,
+            },
+            {
+              source: "Ireland",
+              target: "GFATM",
+              value: 3241,
+            },
+            {
+              source: "Luxembourg",
+              target: "INTLNGO",
+              value: 3187,
+            },
+            {
+              source: "Austria",
+              target: "AsDB",
+              value: 3132,
+            },
+            {
+              source: "Belgium",
+              target: "EC",
+              value: 3088,
+            },
+            {
+              source: "Netherlands",
+              target: "EC",
+              value: 3016,
+            },
+            {
+              source: "Italy",
+              target: "WHO",
+              value: 3004,
+            },
+            {
+              source: "Luxembourg",
+              target: "UNICEF",
+              value: 2916,
+            },
+            {
+              source: "China Government",
+              target: "WB_IDA",
+              value: 2857,
+            },
+            {
+              source: "Australia",
+              target: "GFATM",
+              value: 2683,
+            },
+            {
+              source: "Switzerland",
+              target: "UNICEF",
+              value: 2651,
+            },
+            {
+              source: "Austria",
+              target: "WB_IDA",
+              value: 2576,
+            },
+            {
+              source: "Belgium",
+              target: "AsDB",
+              value: 2528,
+            },
+            {
+              source: "Canada",
+              target: "WHO",
+              value: 2474,
+            },
+            {
+              source: "Switzerland",
+              target: "GAVI",
+              value: 2416,
+            },
+            {
+              source: "Canada",
+              target: "UNICEF",
+              value: 2396,
+            },
+            {
+              source: "Sweden",
+              target: "EC",
+              value: 2312,
+            },
+            {
+              source: "Spain",
+              target: "GFATM",
+              value: 2161,
+            },
+            {
+              source: "Japan",
+              target: "UNFPA",
+              value: 2045,
+            },
+            {
+              source: "Spain",
+              target: "WHO",
+              value: 2030,
+            },
+            {
+              source: "Austria",
+              target: "EC",
+              value: 2002,
+            },
+            {
+              source: "Norway",
+              target: "WHO",
+              value: 1954,
+            },
+            {
+              source: "Ireland",
+              target: "INTLNGO",
+              value: 1901,
+            },
+            {
+              source: "Denmark",
+              target: "AsDB",
+              value: 1792,
+            },
+            {
+              source: "Belgium",
+              target: "INTLNGO",
+              value: 1767,
+            },
+            {
+              source: "Finland",
+              target: "AsDB",
+              value: 1737,
+            },
+            {
+              source: "Denmark",
+              target: "GFATM",
+              value: 1693,
+            },
+            {
+              source: "Sweden",
+              target: "INTLNGO",
+              value: 1644,
+            },
+            {
+              source: "Denmark",
+              target: "EC",
+              value: 1617,
+            },
+            {
+              source: "Denmark",
+              target: "GAVI",
+              value: 1610,
+            },
+            {
+              source: "Belgium",
+              target: "WB_IDA",
+              value: 1563,
+            },
+            {
+              source: "Korea",
+              target: "GFATM",
+              value: 1550,
+            },
+            {
+              source: "Korea",
+              target: "UNICEF",
+              value: 1526,
+            },
+            {
+              source: "Netherlands",
+              target: "INTLNGO",
+              value: 1378,
+            },
+            {
+              source: "Spain",
+              target: "GAVI",
+              value: 1350,
+            },
+            {
+              source: "Finland",
+              target: "EC",
+              value: 1272,
+            },
+            {
+              source: "Denmark",
+              target: "WB_IDA",
+              value: 1260,
+            },
+            {
+              source: "Ireland",
+              target: "EC",
+              value: 1197,
+            },
+            {
+              source: "New_Zealand",
+              target: "AsDB",
+              value: 1104,
+            },
+            {
+              source: "Portugal",
+              target: "EC",
+              value: 1099,
+            },
+            {
+              source: "Australia",
+              target: "WB_IDA",
+              value: 1066,
+            },
+            {
+              source: "Greece",
+              target: "EC",
+              value: 1060,
+            },
+            {
+              source: "Spain",
+              target: "INTLNGO",
+              value: 1032,
+            },
+            {
+              source: "Norway",
+              target: "WB_IDA",
+              value: 1009,
+            },
+            {
+              source: "Luxembourg",
+              target: "WHO",
+              value: 993,
+            },
+            {
+              source: "Belgium",
+              target: "WHO",
+              value: 964,
+            },
+            {
+              source: "Netherlands",
+              target: "WHO",
+              value: 945,
+            },
+            {
+              source: "Finland",
+              target: "WB_IDA",
+              value: 925,
+            },
+            {
+              source: "China Government",
+              target: "WHO",
+              value: 853,
+            },
+            {
+              source: "Luxembourg",
+              target: "AsDB",
+              value: 821,
+            },
+            {
+              source: "Ireland",
+              target: "UNICEF",
+              value: 756,
+            },
+            {
+              source: "Switzerland",
+              target: "UNFPA",
+              value: 754,
+            },
+            {
+              source: "Sweden",
+              target: "WHO",
+              value: 723,
+            },
+            {
+              source: "Finland",
+              target: "INTLNGO",
+              value: 715,
+            },
+            {
+              source: "Italy",
+              target: "INTLNGO",
+              value: 683,
+            },
+            {
+              source: "Netherlands",
+              target: "UNICEF",
+              value: 657,
+            },
+            {
+              source: "Switzerland",
+              target: "WHO",
+              value: 627,
+            },
+            {
+              source: "Austria",
+              target: "WHO",
+              value: 624,
+            },
+            {
+              source: "Finland",
+              target: "GAVI",
+              value: 602,
+            },
+            {
+              source: "Ireland",
+              target: "GAVI",
+              value: 602,
+            },
+            {
+              source: "Luxembourg",
+              target: "GFATM",
+              value: 582,
+            },
+            {
+              source: "France",
+              target: "UNICEF",
+              value: 578,
+            },
+            {
+              source: "Denmark",
+              target: "WHO",
+              value: 506,
+            },
+            {
+              source: "United_States",
+              target: "US Foundations",
+              value: 417,
+            },
+            {
+              source: "Ireland",
+              target: "WB_IDA",
+              value: 416,
+            },
+            {
+              source: "Italy",
+              target: "UNICEF",
+              value: 408,
+            },
+            {
+              source: "Finland",
+              target: "WHO",
+              value: 397,
+            },
+            {
+              source: "Denmark",
+              target: "UNICEF",
+              value: 392,
+            },
+            {
+              source: "Other Countries",
+              target: "INTLNGO",
+              value: 391,
+            },
+            {
+              source: "Luxembourg",
+              target: "UNFPA",
+              value: 376,
+            },
+            {
+              source: "Ireland",
+              target: "WHO",
+              value: 375,
+            },
+            {
+              source: "Spain",
+              target: "UNICEF",
+              value: 354,
+            },
+            {
+              source: "Portugal",
+              target: "WHO",
+              value: 343,
+            },
+            {
+              source: "Other Countries",
+              target: "WB_IDA",
+              value: 341,
+            },
+            {
+              source: "Greece",
+              target: "WHO",
+              value: 332,
+            },
+            {
+              source: "Austria",
+              target: "INTLNGO",
+              value: 311,
+            },
+            {
+              source: "United_States",
+              target: "UNAIDS",
+              value: 285,
+            },
+            {
+              source: "Luxembourg",
+              target: "WB_IDA",
+              value: 271,
+            },
+            {
+              source: "Denmark",
+              target: "UNFPA",
+              value: 254,
+            },
+            {
+              source: "Luxembourg",
+              target: "EC",
+              value: 227,
+            },
+            {
+              source: "China Government",
+              target: "GAVI",
+              value: 199,
+            },
+            {
+              source: "Luxembourg",
+              target: "GAVI",
+              value: 199,
+            },
+            {
+              source: "New_Zealand",
+              target: "WB_IDA",
+              value: 167,
+            },
+            {
+              source: "Belgium",
+              target: "UNICEF",
+              value: 131,
+            },
+            {
+              source: "Sweden",
+              target: "UNAIDS",
+              value: 129,
+            },
+            {
+              source: "Netherlands",
+              target: "UNAIDS",
+              value: 87,
+            },
+            {
+              source: "Austria",
+              target: "UNICEF",
+              value: 85,
+            },
+            {
+              source: "United_Kingdom",
+              target: "UNAIDS",
+              value: 72,
+            },
+            {
+              source: "Other Countries",
+              target: "UNAIDS",
+              value: 67,
+            },
+            {
+              source: "Norway",
+              target: "UNAIDS",
+              value: 62,
+            },
+            {
+              source: "Greece",
+              target: "WB_IDA",
+              value: 60,
+            },
+            {
+              source: "Portugal",
+              target: "UNFPA",
+              value: 59,
+            },
+            {
+              source: "Finland",
+              target: "UNICEF",
+              value: 54,
+            },
+            {
+              source: "Portugal",
+              target: "UNICEF",
+              value: 47,
+            },
+            {
+              source: "Greece",
+              target: "UNICEF",
+              value: 45,
+            },
+            {
+              source: "Portugal",
+              target: "WB_IDA",
+              value: 45,
+            },
+            {
+              source: "New_Zealand",
+              target: "GFATM",
+              value: 41,
+            },
+            {
+              source: "Switzerland",
+              target: "UNAIDS",
+              value: 41,
+            },
+            {
+              source: "Portugal",
+              target: "GFATM",
+              value: 33,
+            },
+            {
+              source: "Germany",
+              target: "UNAIDS",
+              value: 23,
+            },
+            {
+              source: "Denmark",
+              target: "UNAIDS",
+              value: 21,
+            },
+            {
+              source: "Luxembourg",
+              target: "UNAIDS",
+              value: 21,
+            },
+            {
+              source: "Belgium",
+              target: "UNAIDS",
+              value: 16,
+            },
+            {
+              source: "Australia",
+              target: "UNAIDS",
+              value: 15,
+            },
+            {
+              source: "Canada",
+              target: "UNAIDS",
+              value: 15,
+            },
+            {
+              source: "Ireland",
+              target: "UNAIDS",
+              value: 13,
+            },
+            {
+              source: "Greece",
+              target: "GFATM",
+              value: 8,
+            },
+            {
+              source: "Private Sector",
+              target: "UNAIDS",
+              value: 7,
+            },
+            {
+              source: "China Government",
+              target: "UNAIDS",
+              value: 4,
+            },
+            {
+              source: "Unspecified",
+              target: "WHO",
+              value: 3,
+            },
+            {
+              source: "France",
+              target: "UNAIDS",
+              value: 2,
+            },
+            {
+              source: "Japan",
+              target: "UNAIDS",
+              value: 2,
+            },
+            {
+              source: "Italy",
+              target: "UNAIDS",
+              value: 1,
+            },
+            {
+              source: "New_Zealand",
+              target: "UNAIDS",
+              value: 1,
+            },
+            {
+              source: "Unspecified",
+              target: "UNAIDS",
+              value: 1,
+            },
+            {
+              source: "WB_IBRD",
+              target: "India",
+              value: 863871,
+            },
+            {
+              source: "AsDB",
+              target: "India",
+              value: 515646,
+            },
+            {
+              source: "GAVI",
+              target: "Pakistan",
+              value: 355558,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Indonesia",
+              value: 339423,
+            },
+            {
+              source: "AsDB",
+              target: "Indonesia",
+              value: 281225,
+            },
+            {
+              source: "AsDB",
+              target: "Philippines",
+              value: 265704,
+            },
+            {
+              source: "GFATM",
+              target: "India",
+              value: 188212,
+            },
+            {
+              source: "AsDB",
+              target: "Pakistan",
+              value: 174981,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Pakistan",
+              value: 145994,
+            },
+            {
+              source: "US Foundations",
+              target: "India",
+              value: 139600,
+            },
+            {
+              source: "AsDB",
+              target: "Nepal",
+              value: 133319,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Sri Lanka",
+              value: 128441,
+            },
+            {
+              source: "AsDB",
+              target: "Papua New Guinea",
+              value: 123787,
+            },
+            {
+              source: "GFATM",
+              target: "Myanmar",
+              value: 119839,
+            },
+            {
+              source: "GAVI",
+              target: "India",
+              value: 109124,
+            },
+            {
+              source: "GAVI",
+              target: "Bangladesh",
+              value: 108027,
+            },
+            {
+              source: "WB_IBRD",
+              target: "China",
+              value: 107269,
+            },
+            {
+              source: "GFATM",
+              target: "Indonesia",
+              value: 105127,
+            },
+            {
+              source: "GAVI",
+              target: "Myanmar",
+              value: 102599,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Philippines",
+              value: 101842,
+            },
+            {
+              source: "GFATM",
+              target: "Bangladesh",
+              value: 95950,
+            },
+            {
+              source: "AsDB",
+              target: "Cambodia",
+              value: 83326,
+            },
+            {
+              source: "GFATM",
+              target: "Pakistan",
+              value: 79082,
+            },
+            {
+              source: "WHO",
+              target: "Pakistan",
+              value: 70630,
+            },
+            {
+              source: "US Foundations",
+              target: "China",
+              value: 66193,
+            },
+            {
+              source: "GFATM",
+              target: "Vietnam",
+              value: 65020,
+            },
+            {
+              source: "GFATM",
+              target: "Philippines",
+              value: 61099,
+            },
+            {
+              source: "WB_IDA",
+              target: "Afghanistan",
+              value: 58423,
+            },
+            {
+              source: "INTLNGO",
+              target: "Bangladesh",
+              value: 54332,
+            },
+            {
+              source: "UNICEF",
+              target: "Afghanistan",
+              value: 52433,
+            },
+            {
+              source: "US Foundations",
+              target: "Pakistan",
+              value: 49560,
+            },
+            {
+              source: "AsDB",
+              target: "Bangladesh",
+              value: 48847,
+            },
+            {
+              source: "NGO",
+              target: "Pakistan",
+              value: 48321,
+            },
+            {
+              source: "UNICEF",
+              target: "Bangladesh",
+              value: 45753,
+            },
+            {
+              source: "UNICEF",
+              target: "Pakistan",
+              value: 45139,
+            },
+            {
+              source: "EC",
+              target: "Afghanistan",
+              value: 42608,
+            },
+            {
+              source: "AsDB",
+              target: "Afghanistan",
+              value: 40204,
+            },
+            {
+              source: "INTLNGO",
+              target: "Pakistan",
+              value: 39344,
+            },
+            {
+              source: "WB_IDA",
+              target: "Bangladesh",
+              value: 39106,
+            },
+            {
+              source: "GAVI",
+              target: "Afghanistan",
+              value: 36164,
+            },
+            {
+              source: "AsDB",
+              target: "Mongolia",
+              value: 35250,
+            },
+            {
+              source: "AsDB",
+              target: "Vietnam",
+              value: 34839,
+            },
+            {
+              source: "WHO",
+              target: "Afghanistan",
+              value: 34224,
+            },
+            {
+              source: "WHO",
+              target: "India",
+              value: 34062,
+            },
+            {
+              source: "GFATM",
+              target: "Thailand",
+              value: 32532,
+            },
+            {
+              source: "UNFPA",
+              target: "Bangladesh",
+              value: 32169,
+            },
+            {
+              source: "INTLNGO",
+              target: "Cambodia",
+              value: 32122,
+            },
+            {
+              source: "INTLNGO",
+              target: "India",
+              value: 30456,
+            },
+            {
+              source: "INTLNGO",
+              target: "Philippines",
+              value: 29762,
+            },
+            {
+              source: "NGO",
+              target: "Bangladesh",
+              value: 29399,
+            },
+            {
+              source: "GFATM",
+              target: "Papua New Guinea",
+              value: 28242,
+            },
+            {
+              source: "WB_IDA",
+              target: "Myanmar",
+              value: 27589,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Bangladesh",
+              value: 27309,
+            },
+            {
+              source: "EC",
+              target: "Pakistan",
+              value: 27059,
+            },
+            {
+              source: "INTLNGO",
+              target: "Myanmar",
+              value: 26210,
+            },
+            {
+              source: "INTLNGO",
+              target: "Indonesia",
+              value: 25998,
+            },
+            {
+              source: "GFATM",
+              target: "Afghanistan",
+              value: 24920,
+            },
+            {
+              source: "WHO",
+              target: "Indonesia",
+              value: 22839,
+            },
+            {
+              source: "AsDB",
+              target: "Sri Lanka",
+              value: 21255,
+            },
+            {
+              source: "GAVI",
+              target: "Vietnam",
+              value: 20483,
+            },
+            {
+              source: "GFATM",
+              target: "Cambodia",
+              value: 20454,
+            },
+            {
+              source: "US Foundations",
+              target: "Bangladesh",
+              value: 19533,
+            },
+            {
+              source: "NGO",
+              target: "Afghanistan",
+              value: 18745,
+            },
+            {
+              source: "GFATM",
+              target: "Nepal",
+              value: 18261,
+            },
+            {
+              source: "NGO",
+              target: "India",
+              value: 17601,
+            },
+            {
+              source: "INTLNGO",
+              target: "Vietnam",
+              value: 17271,
+            },
+            {
+              source: "WB_IDA",
+              target: "Nepal",
+              value: 17179,
+            },
+            {
+              source: "WHO",
+              target: "Bangladesh",
+              value: 16426,
+            },
+            {
+              source: "WB_IDA",
+              target: "Papua New Guinea",
+              value: 16396,
+            },
+            {
+              source: "GFATM",
+              target: "North Korea",
+              value: 16328,
+            },
+            {
+              source: "INTLNGO",
+              target: "Nepal",
+              value: 16218,
+            },
+            {
+              source: "INTLNGO",
+              target: "Papua New Guinea",
+              value: 15710,
+            },
+            {
+              source: "AsDB",
+              target: "Malaysia",
+              value: 15426,
+            },
+            {
+              source: "WHO",
+              target: "Philippines",
+              value: 14885,
+            },
+            {
+              source: "WHO",
+              target: "Papua New Guinea",
+              value: 14760,
+            },
+            {
+              source: "NGO",
+              target: "Nepal",
+              value: 14660,
+            },
+            {
+              source: "AsDB",
+              target: "China",
+              value: 14580,
+            },
+            {
+              source: "GFATM",
+              target: "Laos",
+              value: 14440,
+            },
+            {
+              source: "UNICEF",
+              target: "Myanmar",
+              value: 14137,
+            },
+            {
+              source: "WB_IDA",
+              target: "Cambodia",
+              value: 14097,
+            },
+            {
+              source: "INTLNGO",
+              target: "Thailand",
+              value: 13328,
+            },
+            {
+              source: "UNICEF",
+              target: "Indonesia",
+              value: 13296,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Afghanistan",
+              value: 12360,
+            },
+            {
+              source: "WB_IDA",
+              target: "Vietnam",
+              value: 11797,
+            },
+            {
+              source: "EC",
+              target: "Laos",
+              value: 11774,
+            },
+            {
+              source: "INTLNGO",
+              target: "Laos",
+              value: 11526,
+            },
+            {
+              source: "US Foundations",
+              target: "Indonesia",
+              value: 11288,
+            },
+            {
+              source: "GAVI",
+              target: "Nepal",
+              value: 11008,
+            },
+            {
+              source: "WHO",
+              target: "Vietnam",
+              value: 10807,
+            },
+            {
+              source: "GAVI",
+              target: "Cambodia",
+              value: 10740,
+            },
+            {
+              source: "WHO",
+              target: "Thailand",
+              value: 10375,
+            },
+            {
+              source: "NGO",
+              target: "Myanmar",
+              value: 10102,
+            },
+            {
+              source: "GAVI",
+              target: "Papua New Guinea",
+              value: 9433,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Mongolia",
+              value: 8784,
+            },
+            {
+              source: "WB_IDA",
+              target: "Sri Lanka",
+              value: 7916,
+            },
+            {
+              source: "INTLNGO",
+              target: "Vanuatu",
+              value: 7848,
+            },
+            {
+              source: "NGO",
+              target: "Philippines",
+              value: 7629,
+            },
+            {
+              source: "UNICEF",
+              target: "Laos",
+              value: 7485,
+            },
+            {
+              source: "WHO",
+              target: "Nepal",
+              value: 7048,
+            },
+            {
+              source: "WHO",
+              target: "Laos",
+              value: 7028,
+            },
+            {
+              source: "AsDB",
+              target: "Vanuatu",
+              value: 6975,
+            },
+            {
+              source: "UNICEF",
+              target: "Philippines",
+              value: 6937,
+            },
+            {
+              source: "EC",
+              target: "Bangladesh",
+              value: 6530,
+            },
+            {
+              source: "UNICEF",
+              target: "Nepal",
+              value: 6430,
+            },
+            {
+              source: "WHO",
+              target: "Timor-Leste",
+              value: 6360,
+            },
+            {
+              source: "AsDB",
+              target: "Tonga",
+              value: 6301,
+            },
+            {
+              source: "AsDB",
+              target: "Samoa",
+              value: 6225,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Myanmar",
+              value: 6156,
+            },
+            {
+              source: "WHO",
+              target: "Myanmar",
+              value: 6129,
+            },
+            {
+              source: "NGO",
+              target: "Indonesia",
+              value: 6128,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Cambodia",
+              value: 5900,
+            },
+            {
+              source: "GFATM",
+              target: "Timor-Leste",
+              value: 5574,
+            },
+            {
+              source: "WHO",
+              target: "Mongolia",
+              value: 5545,
+            },
+            {
+              source: "GFATM",
+              target: "Mongolia",
+              value: 5374,
+            },
+            {
+              source: "WHO",
+              target: "Sri Lanka",
+              value: 5341,
+            },
+            {
+              source: "AsDB",
+              target: "Solomon Islands",
+              value: 5207,
+            },
+            {
+              source: "NGO",
+              target: "Vietnam",
+              value: 5044,
+            },
+            {
+              source: "GAVI",
+              target: "Laos",
+              value: 5024,
+            },
+            {
+              source: "WHO",
+              target: "Cambodia",
+              value: 5024,
+            },
+            {
+              source: "AsDB",
+              target: "Laos",
+              value: 4673,
+            },
+            {
+              source: "GFATM",
+              target: "Sri Lanka",
+              value: 4670,
+            },
+            {
+              source: "WB_IDA",
+              target: "Maldives",
+              value: 4597,
+            },
+            {
+              source: "UNICEF",
+              target: "India",
+              value: 4239,
+            },
+            {
+              source: "EC",
+              target: "Timor-Leste",
+              value: 4227,
+            },
+            {
+              source: "UNICEF",
+              target: "Fiji",
+              value: 4099,
+            },
+            {
+              source: "WHO",
+              target: "Maldives",
+              value: 4051,
+            },
+            {
+              source: "WHO",
+              target: "Federated States of Micronesia",
+              value: 3988,
+            },
+            {
+              source: "UNICEF",
+              target: "Timor-Leste",
+              value: 3729,
+            },
+            {
+              source: "US Foundations",
+              target: "Vietnam",
+              value: 3681,
+            },
+            {
+              source: "INTLNGO",
+              target: "Timor-Leste",
+              value: 3622,
+            },
+            {
+              source: "UNFPA",
+              target: "Myanmar",
+              value: 3599,
+            },
+            {
+              source: "NGO",
+              target: "Laos",
+              value: 3587,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Nepal",
+              value: 3570,
+            },
+            {
+              source: "INTLNGO",
+              target: "Afghanistan",
+              value: 3544,
+            },
+            {
+              source: "INTLNGO",
+              target: "China",
+              value: 3544,
+            },
+            {
+              source: "UNICEF",
+              target: "Thailand",
+              value: 3232,
+            },
+            {
+              source: "US Foundations",
+              target: "Nepal",
+              value: 3229,
+            },
+            {
+              source: "US Foundations",
+              target: "Afghanistan",
+              value: 3173,
+            },
+            {
+              source: "US Foundations",
+              target: "Myanmar",
+              value: 3054,
+            },
+            {
+              source: "INTLNGO",
+              target: "Solomon Islands",
+              value: 3012,
+            },
+            {
+              source: "GFATM",
+              target: "Bhutan",
+              value: 2981,
+            },
+            {
+              source: "UNICEF",
+              target: "Papua New Guinea",
+              value: 2977,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Laos",
+              value: 2933,
+            },
+            {
+              source: "WHO",
+              target: "Solomon Islands",
+              value: 2898,
+            },
+            {
+              source: "INTLNGO",
+              target: "Mongolia",
+              value: 2841,
+            },
+            {
+              source: "WHO",
+              target: "Fiji",
+              value: 2834,
+            },
+            {
+              source: "NGO",
+              target: "Thailand",
+              value: 2761,
+            },
+            {
+              source: "GAVI",
+              target: "China",
+              value: 2604,
+            },
+            {
+              source: "WHO",
+              target: "Malaysia",
+              value: 2583,
+            },
+            {
+              source: "WHO",
+              target: "Bhutan",
+              value: 2549,
+            },
+            {
+              source: "UNICEF",
+              target: "Bhutan",
+              value: 2479,
+            },
+            {
+              source: "EC",
+              target: "Sri Lanka",
+              value: 2471,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Papua New Guinea",
+              value: 2462,
+            },
+            {
+              source: "INTLNGO",
+              target: "Malaysia",
+              value: 2410,
+            },
+            {
+              source: "NGO",
+              target: "Timor-Leste",
+              value: 2258,
+            },
+            {
+              source: "WHO",
+              target: "Marshall Islands",
+              value: 2213,
+            },
+            {
+              source: "US Foundations",
+              target: "Philippines",
+              value: 2195,
+            },
+            {
+              source: "EC",
+              target: "Thailand",
+              value: 2148,
+            },
+            {
+              source: "INTLNGO",
+              target: "Fiji",
+              value: 2130,
+            },
+            {
+              source: "GFATM",
+              target: "Malaysia",
+              value: 2092,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Bhutan",
+              value: 2045,
+            },
+            {
+              source: "UNFPA",
+              target: "Philippines",
+              value: 2039,
+            },
+            {
+              source: "UNFPA",
+              target: "Indonesia",
+              value: 2037,
+            },
+            {
+              source: "INTLNGO",
+              target: "Kiribati",
+              value: 2031,
+            },
+            {
+              source: "INTLNGO",
+              target: "Tonga",
+              value: 2002,
+            },
+            {
+              source: "WB_IDA",
+              target: "Marshall Islands",
+              value: 1961,
+            },
+            {
+              source: "WB_IDA",
+              target: "Laos",
+              value: 1945,
+            },
+            {
+              source: "UNICEF",
+              target: "Maldives",
+              value: 1923,
+            },
+            {
+              source: "UNICEF",
+              target: "Mongolia",
+              value: 1903,
+            },
+            {
+              source: "UNFPA",
+              target: "Vietnam",
+              value: 1859,
+            },
+            {
+              source: "NGO",
+              target: "Cambodia",
+              value: 1836,
+            },
+            {
+              source: "GAVI",
+              target: "Mongolia",
+              value: 1834,
+            },
+            {
+              source: "WHO",
+              target: "Vanuatu",
+              value: 1809,
+            },
+            {
+              source: "UNICEF",
+              target: "Cambodia",
+              value: 1754,
+            },
+            {
+              source: "UNFPA",
+              target: "Nepal",
+              value: 1657,
+            },
+            {
+              source: "WB_IDA",
+              target: "Mongolia",
+              value: 1654,
+            },
+            {
+              source: "AsDB",
+              target: "Myanmar",
+              value: 1620,
+            },
+            {
+              source: "UNICEF",
+              target: "North Korea",
+              value: 1603,
+            },
+            {
+              source: "INTLNGO",
+              target: "Sri Lanka",
+              value: 1576,
+            },
+            {
+              source: "WHO",
+              target: "Samoa",
+              value: 1517,
+            },
+            {
+              source: "WB_IDA",
+              target: "Samoa",
+              value: 1492,
+            },
+            {
+              source: "UNICEF",
+              target: "Kiribati",
+              value: 1468,
+            },
+            {
+              source: "INTLNGO",
+              target: "Federated States of Micronesia",
+              value: 1467,
+            },
+            {
+              source: "AsDB",
+              target: "Bhutan",
+              value: 1439,
+            },
+            {
+              source: "INTLNGO",
+              target: "Samoa",
+              value: 1420,
+            },
+            {
+              source: "US Foundations",
+              target: "Laos",
+              value: 1402,
+            },
+            {
+              source: "US Foundations",
+              target: "Papua New Guinea",
+              value: 1375,
+            },
+            {
+              source: "INTLNGO",
+              target: "North Korea",
+              value: 1301,
+            },
+            {
+              source: "WHO",
+              target: "Wallis and Futuna Islands",
+              value: 1256,
+            },
+            {
+              source: "EC",
+              target: "Mongolia",
+              value: 1230,
+            },
+            {
+              source: "UNICEF",
+              target: "Vietnam",
+              value: 1226,
+            },
+            {
+              source: "EC",
+              target: "Indonesia",
+              value: 1139,
+            },
+            {
+              source: "US Foundations",
+              target: "Cambodia",
+              value: 1131,
+            },
+            {
+              source: "EC",
+              target: "India",
+              value: 1129,
+            },
+            {
+              source: "AsDB",
+              target: "Tuvalu",
+              value: 1084,
+            },
+            {
+              source: "UNFPA",
+              target: "Afghanistan",
+              value: 1038,
+            },
+            {
+              source: "GAVI",
+              target: "North Korea",
+              value: 1017,
+            },
+            {
+              source: "UNICEF",
+              target: "Sri Lanka",
+              value: 1009,
+            },
+            {
+              source: "WHO",
+              target: "Tonga",
+              value: 1005,
+            },
+            {
+              source: "WHO",
+              target: "Kiribati",
+              value: 1005,
+            },
+            {
+              source: "WHO",
+              target: "China",
+              value: 967,
+            },
+            {
+              source: "US Foundations",
+              target: "Malaysia",
+              value: 960,
+            },
+            {
+              source: "US Foundations",
+              target: "Thailand",
+              value: 947,
+            },
+            {
+              source: "UNFPA",
+              target: "Pakistan",
+              value: 913,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Fiji",
+              value: 905,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Maldives",
+              value: 899,
+            },
+            {
+              source: "UNFPA",
+              target: "Fiji",
+              value: 896,
+            },
+            {
+              source: "UNFPA",
+              target: "Solomon Islands",
+              value: 896,
+            },
+            {
+              source: "UNFPA",
+              target: "Tonga",
+              value: 896,
+            },
+            {
+              source: "UNFPA",
+              target: "Vanuatu",
+              value: 896,
+            },
+            {
+              source: "UNFPA",
+              target: "Samoa",
+              value: 896,
+            },
+            {
+              source: "UNFPA",
+              target: "Kiribati",
+              value: 896,
+            },
+            {
+              source: "UNFPA",
+              target: "Laos",
+              value: 826,
+            },
+            {
+              source: "GFATM",
+              target: "Solomon Islands",
+              value: 740,
+            },
+            {
+              source: "UNICEF",
+              target: "Malaysia",
+              value: 730,
+            },
+            {
+              source: "INTLNGO",
+              target: "Marshall Islands",
+              value: 714,
+            },
+            {
+              source: "AsDB",
+              target: "Niue",
+              value: 707,
+            },
+            {
+              source: "EC",
+              target: "Vietnam",
+              value: 693,
+            },
+            {
+              source: "INTLNGO",
+              target: "Tuvalu",
+              value: 669,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Solomon Islands",
+              value: 616,
+            },
+            {
+              source: "NGO",
+              target: "Fiji",
+              value: 572,
+            },
+            {
+              source: "US Foundations",
+              target: "Sri Lanka",
+              value: 572,
+            },
+            {
+              source: "UNFPA",
+              target: "Mongolia",
+              value: 555,
+            },
+            {
+              source: "WHO",
+              target: "Cook Islands",
+              value: 545,
+            },
+            {
+              source: "NGO",
+              target: "Malaysia",
+              value: 545,
+            },
+            {
+              source: "AsDB",
+              target: "Fiji",
+              value: 520,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Marshall Islands",
+              value: 511,
+            },
+            {
+              source: "WHO",
+              target: "Tuvalu",
+              value: 501,
+            },
+            {
+              source: "AsDB",
+              target: "Federated States of Micronesia",
+              value: 489,
+            },
+            {
+              source: "GAVI",
+              target: "Sri Lanka",
+              value: 478,
+            },
+            {
+              source: "WHO",
+              target: "Niue",
+              value: 474,
+            },
+            {
+              source: "UNICEF",
+              target: "Solomon Islands",
+              value: 461,
+            },
+            {
+              source: "UNICEF",
+              target: "Vanuatu",
+              value: 455,
+            },
+            {
+              source: "INTLNGO",
+              target: "Wallis and Futuna Islands",
+              value: 434,
+            },
+            {
+              source: "WHO",
+              target: "Tokelau",
+              value: 432,
+            },
+            {
+              source: "AsDB",
+              target: "Marshall Islands",
+              value: 386,
+            },
+            {
+              source: "WB_IDA",
+              target: "Kiribati",
+              value: 386,
+            },
+            {
+              source: "UNAIDS",
+              target: "India",
+              value: 382,
+            },
+            {
+              source: "GAVI",
+              target: "Indonesia",
+              value: 374,
+            },
+            {
+              source: "UNFPA",
+              target: "Timor-Leste",
+              value: 371,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Samoa",
+              value: 357,
+            },
+            {
+              source: "UNFPA",
+              target: "Papua New Guinea",
+              value: 328,
+            },
+            {
+              source: "US Foundations",
+              target: "Timor-Leste",
+              value: 309,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Kiribati",
+              value: 308,
+            },
+            {
+              source: "WHO",
+              target: "North Korea",
+              value: 295,
+            },
+            {
+              source: "UNICEF",
+              target: "Samoa",
+              value: 265,
+            },
+            {
+              source: "EC",
+              target: "Philippines",
+              value: 258,
+            },
+            {
+              source: "US Foundations",
+              target: "Mongolia",
+              value: 252,
+            },
+            {
+              source: "UNICEF",
+              target: "Federated States of Micronesia",
+              value: 243,
+            },
+            {
+              source: "UNICEF",
+              target: "China",
+              value: 240,
+            },
+            {
+              source: "UNFPA",
+              target: "Cambodia",
+              value: 234,
+            },
+            {
+              source: "INTLNGO",
+              target: "Cook Islands",
+              value: 229,
+            },
+            {
+              source: "INTLNGO",
+              target: "Niue",
+              value: 213,
+            },
+            {
+              source: "INTLNGO",
+              target: "Tokelau",
+              value: 208,
+            },
+            {
+              source: "INTLNGO",
+              target: "Maldives",
+              value: 204,
+            },
+            {
+              source: "US Foundations",
+              target: "North Korea",
+              value: 190,
+            },
+            {
+              source: "GAVI",
+              target: "Timor-Leste",
+              value: 187,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Tuvalu",
+              value: 186,
+            },
+            {
+              source: "US Foundations",
+              target: "Bhutan",
+              value: 185,
+            },
+            {
+              source: "NGO",
+              target: "Mongolia",
+              value: 184,
+            },
+            {
+              source: "US Foundations",
+              target: "Maldives",
+              value: 177,
+            },
+            {
+              source: "INTLNGO",
+              target: "Bhutan",
+              value: 169,
+            },
+            {
+              source: "UNAIDS",
+              target: "Indonesia",
+              value: 158,
+            },
+            {
+              source: "NGO",
+              target: "Papua New Guinea",
+              value: 148,
+            },
+            {
+              source: "WB_IBRD",
+              target: "Federated States of Micronesia",
+              value: 145,
+            },
+            {
+              source: "UNAIDS",
+              target: "Vietnam",
+              value: 123,
+            },
+            {
+              source: "GAVI",
+              target: "Solomon Islands",
+              value: 121,
+            },
+            {
+              source: "GAVI",
+              target: "Vanuatu",
+              value: 109,
+            },
+            {
+              source: "EC",
+              target: "China",
+              value: 105,
+            },
+            {
+              source: "GAVI",
+              target: "Marshall Islands",
+              value: 104,
+            },
+            {
+              source: "GAVI",
+              target: "Bhutan",
+              value: 102,
+            },
+            {
+              source: "WB_IDA",
+              target: "Fiji",
+              value: 100,
+            },
+            {
+              source: "UNICEF",
+              target: "Tonga",
+              value: 91,
+            },
+            {
+              source: "NGO",
+              target: "Federated States of Micronesia",
+              value: 72,
+            },
+            {
+              source: "UNAIDS",
+              target: "Philippines",
+              value: 68,
+            },
+            {
+              source: "EC",
+              target: "Cambodia",
+              value: 64,
+            },
+            {
+              source: "NGO",
+              target: "China",
+              value: 64,
+            },
+            {
+              source: "NGO",
+              target: "Sri Lanka",
+              value: 54,
+            },
+            {
+              source: "UNFPA",
+              target: "India",
+              value: 53,
+            },
+            {
+              source: "UNAIDS",
+              target: "Malaysia",
+              value: 47,
+            },
+            {
+              source: "UNAIDS",
+              target: "Myanmar",
+              value: 41,
+            },
+            {
+              source: "UNAIDS",
+              target: "Thailand",
+              value: 41,
+            },
+            {
+              source: "UNICEF",
+              target: "Marshall Islands",
+              value: 41,
+            },
+            {
+              source: "EC",
+              target: "Nepal",
+              value: 36,
+            },
+            {
+              source: "NGO",
+              target: "Marshall Islands",
+              value: 36,
+            },
+            {
+              source: "EC",
+              target: "Papua New Guinea",
+              value: 32,
+            },
+            {
+              source: "UNICEF",
+              target: "Niue",
+              value: 27,
+            },
+            {
+              source: "UNICEF",
+              target: "Tuvalu",
+              value: 25,
+            },
+            {
+              source: "EC",
+              target: "Myanmar",
+              value: 25,
+            },
+            {
+              source: "NGO",
+              target: "Solomon Islands",
+              value: 25,
+            },
+            {
+              source: "NGO",
+              target: "Vanuatu",
+              value: 24,
+            },
+            {
+              source: "GAVI",
+              target: "Kiribati",
+              value: 22,
+            },
+            {
+              source: "NGO",
+              target: "Wallis and Futuna Islands",
+              value: 17,
+            },
+            {
+              source: "UNAIDS",
+              target: "Cambodia",
+              value: 16,
+            },
+            {
+              source: "NGO",
+              target: "Kiribati",
+              value: 10,
+            },
+            {
+              source: "NGO",
+              target: "Samoa",
+              value: 9,
+            },
+            {
+              source: "UNFPA",
+              target: "Thailand",
+              value: 8,
+            },
+            {
+              source: "NGO",
+              target: "Tonga",
+              value: 8,
+            },
+            {
+              source: "UNAIDS",
+              target: "Bangladesh",
+              value: 7,
+            },
+            {
+              source: "EC",
+              target: "Malaysia",
+              value: 7,
+            },
+            {
+              source: "GAVI",
+              target: "Samoa",
+              value: 6,
+            },
+            {
+              source: "GAVI",
+              target: "Fiji",
+              value: 4,
+            },
+            {
+              source: "GAVI",
+              target: "Federated States of Micronesia",
+              value: 4,
+            },
+            {
+              source: "EC",
+              target: "Bhutan",
+              value: 4,
+            },
+            {
+              source: "NGO",
+              target: "Cook Islands",
+              value: 3,
+            },
+            {
+              source: "UNAIDS",
+              target: "Laos",
+              value: 2,
+            },
+            {
+              source: "UNFPA",
+              target: "Sri Lanka",
+              value: 2,
+            },
+            {
+              source: "EC",
+              target: "Maldives",
+              value: 2,
+            },
+            {
+              source: "NGO",
+              target: "Tuvalu",
+              value: 2,
+            },
+            {
+              source: "GAVI",
+              target: "Tonga",
+              value: 1,
+            },
+            {
+              source: "UNFPA",
+              target: "China",
+              value: 1,
+            },
+            {
+              source: "NGO",
+              target: "Bhutan",
+              value: 1,
+            },
+            {
+              source: "NGO",
+              target: "Niue",
+              value: 1,
+            },
+            {
+              source: "NGO",
+              target: "North Korea",
+              value: 1,
+            },
+          ],
+        },
+      };
+
+      option && myChart.setOption(option);
+    </script>
+  </body>
+</html>
